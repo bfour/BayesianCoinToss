@@ -11875,7 +11875,7 @@ In summary, combining what we know so far for the likelihood and prior and given
 \begin{equation}\underset{k\to \infty }{\mathop{\lim }}\,\alpha +k=\infty ~;~\underset{k\to \infty ;n\to \infty }{\mathop{\lim }}\,\beta +n-k=\infty ~\end{equation}<p>and therefore, for $c=\alpha +k$. , $d=\beta +n-k$ and $X\tilde{\ }\text{Beta}\left( \text{c},\text{d} \right)$, we conclude for the increase in certainty with an increasing number tosses observed:</p>
 \begin{equation}\underset{c\to \infty }{\mathop{\lim }}\,var\left( X \right)=\underset{c\to \infty }{\mathop{\text{lim}}}\,\frac{cd}{{{\left( c+d \right)}^{2}}\left( c+d+1 \right)}=0=\underset{d\to \infty }{\mathop{\text{lim}}}\,\frac{cd}{{{\left( c+d \right)}^{2}}\left( c+d+1 \right)}=\underset{d\to \infty }{\mathop{\text{lim}}}\,var\left( X \right)\end{equation}<p></p>
 <p>and thus</p>
-\begin{equation}\underset{c,d\to \infty ,\infty }{\mathop{\lim }}\,var\left( X \right)=0\end{equation}<p>For the special case $c=d$ we would even get a monotonic decrease of the variance to 0, as one can clearly see by setting substituting $d$ with $c$:</p>
+\begin{equation}\underset{c,d\to \infty ,\infty }{\mathop{\lim }}\,var\left( X \right)=0\end{equation}<p>For the special case $c=d$ we would even get a monotonic decrease of the variance to 0, as one can clearly see by substituting $d$ with $c$:</p>
 \begin{equation}var\left( X \right)=\frac{1}{4\left( 2c+1 \right)}\end{equation}
 </div>
 </div>
@@ -11886,8 +11886,8 @@ In summary, combining what we know so far for the likelihood and prior and given
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Probability-that-the-coin-is-fair">Probability that the coin is fair<a class="anchor-link" href="#Probability-that-the-coin-is-fair">&#182;</a></h2><p>A fair coin ideally has a probability of 50% for landing on side A and a probability of 50% for landing on side B. Obviously, it is highly unlikely for a coin to have exactly that probability. Kruschke [1] proposes to use a region of practical equivalence, in this case translating to defining an interval for the probability of the coin landing on side A (or B respectively), which is considered to describe the coin as a fair coin. We can formulate this as</p>
-\begin{equation}\left[ a;b \right]~a,b~\epsilon ~\left[ 0;1 \right]\end{equation}<p>is allows for answering the question “What is the probability, that the coin is fair?” with</p>
-\begin{equation}p\left( fair \right)=\underset{a}{\overset{b}{\mathop \int }}\,\frac{{{\theta }^{\alpha +k-1}}{{\left( 1-\theta  \right)}^{\beta +n-k-1}}}{B\left( \alpha +k,\beta +n-k \right)}dx\end{equation}<p>i.e. we simply integrate the posterior over the interval $\left[ a;b \right]$.</p>
+\begin{equation}\left[ a;b \right]~a,b~\epsilon ~\left[ 0;1 \right]~a,b\in \mathbb{R}\end{equation}<p>is allows for answering the question “What is the probability, that the coin is fair?” with</p>
+\begin{equation}p\left( fair \right)=\underset{a}{\overset{b}{\mathop \int }}\,\frac{{{\theta }^{\alpha +k-1}}{{\left( 1-\theta  \right)}^{\beta +n-k-1}}}{B\left( \alpha +k,\beta +n-k \right)}dx\end{equation}<p>i.e. we simply integrate the posterior over a chosen interval $\left[ a;b \right]$.</p>
 <p>[1]    J. Kruschke, Doing Bayesian data analysis: A tutorial with R, JAGS, and Stan. Academic Press, 2014.</p>
 
 </div>
